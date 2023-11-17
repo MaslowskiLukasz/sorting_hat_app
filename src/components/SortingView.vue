@@ -49,7 +49,7 @@ const getAudio = () => {
 }
 
 const getImagePath = computed(() => {
-  return `../${selectedHouse.value.toLowerCase()}.png`;
+  return `${selectedHouse.value.toLowerCase()}.png`;
 });
 </script>
 
