@@ -65,4 +65,12 @@ img {
   max-height: 200px;
   background-color: transparent;
 }
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 16px 0;
+  color: black;
+  border-radius: 5px;
+}
 </style>
