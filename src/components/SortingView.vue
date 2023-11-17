@@ -35,34 +35,11 @@ const audioRef = ref();
 const getHouse = () => {
   selectedHouse.value = selectHouse();
   getAudio();
-  // audioRef.value.play();
-  // Object.values(audio.value).forEach((element, index) => {
-  //   if (index > 0) {
-  //     delays.value.push(delays.value[index - 1] + (element.duration || 0));
-  //   }
-  // });
-  
-    // Object.values(audio.value).forEach((element, index) => {
-    //   setTimeout(() => {
-    //     element.play();
-    //   }, delays[index])
-    // })
-
-  // audio.value.map((element, index) => {
-  //   if (index > 0) {
-  //     delays.value.push(delays.value[index - 1] + (element.duration || 0))
-  //   }
-  // })
-  // console.log("delays: ", delays.value);
-  // audio.value.map((element) => {
-  //   element.play();
-  // })
 }
 
 const switchAudio = () => {
   currentIndex.value += 1;
   currentAudio.value = audio.value[currentIndex.value]
-  // audioRef.value.play();
   setTimeout(() => audioRef.value.play(), 500)
 }
 
@@ -72,7 +49,7 @@ const getAudio = () => {
 }
 
 const getImagePath = computed(() => {
-  return `/${selectedHouse.value.toLowerCase()}.png`;
+  return `../${selectedHouse.value.toLowerCase()}.png`;
 });
 </script>
 

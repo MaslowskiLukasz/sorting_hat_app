@@ -45,22 +45,11 @@ export const selectAudio = (selectedHouse) => {
   const decision = audioFiles.decision[randomIndex(audioFiles.decision.length)];
   const house = `h-${selectedHouse.toLowerCase()}`;
 
-  const stallPath = `/${stall}.mp3`;
-  const attributePath = `/${attribute}.mp3`;
-  const decisionPath = `/${decision}.mp3`;
-  const housePath = `/${house}.mp3`;
+  const stallPath = `../${stall}.mp3`;
+  const attributePath = `../${attribute}.mp3`;
+  const decisionPath = `../${decision}.mp3`;
+  const housePath = `../${house}.mp3`;
 
-  // const stallAudio = new Audio(stallPath);
-  // const attributeAudio = new Audio(attributePath);
-  // const decisionAudio = new Audio(decisionPath);
-  // const houseAudio = new Audio(housePath);
-
-  // return [
-  //   stallAudio,
-  //   attributeAudio,
-  //   decisionAudio,
-  //   houseAudio
-  // ]
   return [
     stallPath,
     attributePath,
