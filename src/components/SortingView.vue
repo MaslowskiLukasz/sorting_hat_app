@@ -1,7 +1,7 @@
 <template>
   <div class="sorting-view">
     <h1>{{ selectedHouse }}</h1>
-    <div v-if="selectedHouse">
+    <div v-if="selectedHouse" class="sorting-view__crest">
       <img :src="getImagePath" :alt="`${selectedHouse} crest`" />
     </div>
     <div v-else>
@@ -62,7 +62,7 @@ const getImagePath = computed(() => {
 }
 
 img {
-  max-height: 600px;
+  max-height: 200px;
   background-color: transparent;
 }
 </style>
