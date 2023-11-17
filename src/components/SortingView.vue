@@ -7,7 +7,7 @@
     <div v-else>
       <h1>Get sorted by the Sorting Hat!</h1>
     </div>
-    <button @click="getHouse()">Get Sorted</button>
+    <button @click="getHouse()">Get Sorted!</button>
     <audio
       controls
       :src="currentAudio"
